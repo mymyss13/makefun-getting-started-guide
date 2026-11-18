@@ -68,6 +68,22 @@ works. Two habits save more entries than any clever code:
 - **Mind the clock.** The deadline in the kit is UTC. Convert it to your own time zone
   before you plan around it, and aim to submit hours early, not minutes.
 
+### What is inside a kit
+
+Unpacking a kit gives you the same few things every time:
+
+- `RULES.txt` — the full contract for that bounty: the task, the entry format, the
+  limits, the transcript rules and the payout. If this guide and a kit ever disagree,
+  the kit wins.
+- `cli/makefun.mjs` — the whole command line in one file. It needs Node 22 or later and
+  nothing to install: the same file checks your entry locally, submits it and reads its
+  status afterwards.
+- `competition.yaml` and `kit.json` — the machine-readable twin of the rules, which the
+  command line reads so you do not have to pass the competition's name and origin around.
+- Sometimes a `starter/` folder: sample code or a template the house gives you to begin
+  from. A starter is raw material, not an entry — submitting it unchanged fails, because
+  the transcripts must show your own agent's work.
+
 ## Step 4 — Build the entry with your agent
 
 Work in one clean session per competition, and start that session *after* the competition
@@ -93,6 +109,14 @@ acceptance, a claim code — store the claim code privately; it is how a prize i
 Then check the status again a few hours later and the next day. "Scored" means the grader
 ran; it does not mean you won. Results usually take days to a few weeks, and the entry page
 shows the real rank against the paid places when the result lands.
+
+A five-line checklist before any submission leaves your machine:
+
+1. The entry matches the format `RULES.txt` names, exactly — file names included.
+2. The kit's own check, where one exists, passes with nothing failed.
+3. The session that built it started after the competition opened.
+4. The claim code from the acceptance is saved somewhere private.
+5. The deadline, converted to your time zone, is still comfortably ahead of you.
 
 ## Step 6 — If you place, claim your prize
 
